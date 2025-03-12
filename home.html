@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmhouse Retreat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    />
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="LOGO2.png" alt="AAI BUNGALOW Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#Photos">Photos</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#booking">Book Now</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>AAI bungalow</h2>
+        <p>Relax and rejuvenate at our luxurious farmhouse</p>
+        <a href="#booking" class="btn">Book Now</a>
+      </div>
+    </section>
+    <!-- Photos Section -->
+    <section id="Photos" class="photos">
+      <h2>Our Bungalow Gallery</h2>
+      <div class="photo-gallery">
+        <img src="aai bungalow 2.jpeg" alt="Bungalow Exterior" />
+        <img src="aai bungalow 5.jpeg" alt="Swimming Pool" />
+        <img src="aai bungalow 4.jpeg" alt="Garden View" />
+        <img
+          src="WhatsApp Image 2025-03-11 at 10.32.49 PM.jpeg"
+          alt="Garden View"
+        />
+        <img
+          src="WhatsApp Image 2025-03-11 at 10.32.50 PM.jpeg"
+          alt="Garden View"
+        />
+        <img
+          src="WhatsApp Image 2025-03-11 at 10.32.51 PM.jpeg"
+          alt="Garden View"
+        />
+      </div>
+    </section>
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+      <h2>Our Facilities</h2>
+      <div class="facilities-container">
+        <div class="facility">
+          <i class="fas fa-swimming-pool"></i>
+          <h3>Swimming Pool</h3>
+          <p>Relax in our crystal-clear swimming pool.</p>
+        </div>
+        <div class="facility">
+          <i class="fas fa-tree"></i>
+          <h3>Spacious Garden</h3>
+          <p>Enjoy a lush green garden with seating areas.</p>
+        </div>
+        <div class="facility">
+          <i class="fas fa-mountain"></i>
+          <h3>Scenic View Balcony</h3>
+          <p>Breathtaking views from our cozy balcony.</p>
+        </div>
+        <div class="facility">
+          <i class="fas fa-campground"></i>
+          <h3>Bonfire & Camping</h3>
+          <p>Experience a warm bonfire & outdoor camping.</p>
+        </div>
+        <div class="facility">
+          <i class="fas fa-wifi"></i>
+          <h3>Free Wi-Fi</h3>
+          <p>Stay connected with our high-speed internet.</p>
+        </div>
+        <div class="facility">
+          <i class="fas fa-user-shield"></i>
+          <h3>Caretaker</h3>
+          <p>
+            Our dedicated caretaker ensures your comfort and safety, available
+            24/7 for assistance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+      <h2>What Our Guests Say</h2>
+      <div class="reviews-container">
+        <div class="review">
+          "Why take an international trip when you can live in heaven?" - Aniket
+        </div>
+        <div class="review">"Had the best party of my life!" - Manjush</div>
+        <div class="review">
+          "Peaceful and silent, perfect getaway." - Kshitij
+        </div>
+
+        <div class="review">
+          "In the lap of Matheran, best-kept secret." - Yash
+        </div>
+        <div class="review">
+          "A truly Peaceful experience, loved every bit!"- Bhargav
+        </div>
+        <div class="review">
+          "Perfect blend of nature and luxury, highly recommend!"- Kommu
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking">
+      <h2>Book Your Stay</h2>
+      <form id="booking-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Contact Number" required />
+        <input type="date" id="checkin" required />
+        <input type="date" id="checkout" required />
+        <input
+          type="number"
+          id="people"
+          placeholder="Number of People"
+          required
+        />
+        <button type="button" onclick="sendToWhatsAppApp()">
+          Send to WhatsApp App
+        </button>
+        <button type="button" onclick="sendToWhatsAppWeb()">
+          Send to WhatsApp Web
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <h2>AAI BUNGALOW</h2>
+          <p>Escape to nature and luxury</p>
+          <p><i class="fas fa-phone"></i> +91 9869041653</p>
+          <p><i class="fas fa-map-marker-alt"></i> AAI Bungalow , lavalwadi ,Neral, Maharashtra, India</p>
+          <p><i class="fas fa-envelope"></i> info@aaibungalow.com</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/Cristiano/" target="_blank"></a><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-map">
+          <iframe
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1074.2865089331938!2d73.3090773598628!3d19.016244098079092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7f050dd473f3d%3A0xbe5089095fb4faf4!2sNeral%2C%20Maharashtra%20410101%2C%20India!5e1!3m2!1sen!2sus!4v1741796137396!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

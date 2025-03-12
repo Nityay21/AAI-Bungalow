@@ -1,0 +1,301 @@
+/* General Styles */
+body {
+  overflow-x: hidden;
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Align logo on left, menu on right */
+  align-items: center; /* Keep everything aligned */
+  padding: 5px 15px;
+  background-color: red; /* Adjust as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 60px; /* Adjust header height */
+  overflow-x: hidden;
+}
+
+.logo img {
+  width: 100px; /* Decrease logo size */
+  height: auto;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Adjust spacing */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: url("farmhouse.jpeg") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.hero-content h2 {
+  font-size: 2.5rem;
+}
+.hero .btn {
+  background: #e67e22;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+/* photo section */
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.photo-gallery img {
+  width: 40%;
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Facilities Section */
+.facilities {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+.facilities h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.facilities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.facility {
+  background: lightgreen;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.facility i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.facility h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.facility p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Reviews Section */
+.reviews {
+  background: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+}
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.review {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+/* Booking Section */
+.booking {
+  padding: 50px;
+  text-align: center;
+  background: white;
+}
+.booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: auto;
+}
+.booking input,
+.booking button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.booking button {
+  background: #27ae60;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  color: #333;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 3px solid #ffcc00;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  width: 48%;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  color: #ff9900;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px 10px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #ff9900;
+}
+
+.footer-right iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+.footer {
+  background: darkturquoise;
+  color: #333;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.footer-info {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.footer-info h2 {
+  font-family: "Merriweather", serif;
+  font-size: 24px;
+  color: #2e4b42;
+}
+
+.footer-info p,
+.footer-info a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-map {
+  flex: 1;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.social-icons a {
+  color: #2e4b42;
+  margin-right: 10px;
+  font-size: 20px;
+}
